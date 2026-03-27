@@ -32,7 +32,7 @@ jobs:
           SHOW_TITLE: "Ale's Daily Drive Intro"
           SHOW_DESCRIPTION: "A short daily intro for Ale's Daily Drive."
           SHOW_AUTHOR: "Ale"
-          OPENAI_VOICE: "marin"
+          OPENAI_VOICE: "cedar"
           OPENAI_TTS_MODEL: "gpt-4o-mini-tts"
         run: python scripts/generate_intro.py
 

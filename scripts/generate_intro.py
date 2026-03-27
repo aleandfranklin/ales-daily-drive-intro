@@ -131,18 +131,29 @@ def write_rss(latest_item: str):
     now = datetime.now(timezone.utc)
     pub_date = format_datetime(now)
     site_link = SITE_BASE
+    cover_url = f"{SITE_BASE}/cover.jpg"
 
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title><![CDATA[{SHOW_TITLE}]]></title>
     <link>{site_link}</link>
     <description><![CDATA[{SHOW_DESCRIPTION}]]></description>
     <language>en-us</language>
-    <managingEditor>{SHOW_EMAIL} ({SHOW_AUTHOR})</managingEditor>
-    <webMaster>{SHOW_EMAIL} ({SHOW_AUTHOR})</webMaster>
+
+    <itunes:author>{SHOW_AUTHOR}</itunes:author>
+    <itunes:owner>
+      <itunes:name>{SHOW_AUTHOR}</itunes:name>
+      <itunes:email>{SHOW_EMAIL}</itunes:email>
+    </itunes:owner>
+
+    <itunes:image href="{cover_url}" />
+
     <lastBuildDate>{pub_date}</lastBuildDate>
+
 {latest_item}
+
   </channel>
 </rss>
 """

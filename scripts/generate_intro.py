@@ -45,12 +45,12 @@ def build_script_text():
     )
   
 def generate_audio(text: str, out_path: Path):
-    with client.audio.speech.with_streaming_response.create(
-        model=MODEL,
-        voice=VOICE,
-        input=text,
-        format="mp3",
-    ) as response:
+  with client.audio.speech.with_streaming_response.create(
+    model=MODEL,
+    voice=VOICE,
+    input=text,
+    response_format="mp3",
+) as response:
         response.stream_to_file(out_path)
 
 def make_episode_filename():

@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Ale's Daily Drive Intro</title>
-    <link>https://example.com</link>
-    <description>Daily intro</description>
+    <title><![CDATA[Ale's Daily Drive Intro]]></title>
+    <link>https://aleandfranklin.github.io/ales-daily-drive-intro</link>
+    <description><![CDATA[A short daily intro for Ale's Daily Drive.]]></description>
+    <language>en-us</language>
+    <managingEditor>cruz.chacha@gmail.com (Ale)</managingEditor>
+    <webMaster>cruz.chacha@gmail.com (Ale)</webMaster>
+    <lastBuildDate>Fri, 27 Mar 2026 15:30:03 +0000</lastBuildDate>
+
+    <item>
+      <title><![CDATA[Daily Intro for March 27, 2026]]></title>
+      <description><![CDATA[Good morning, Alejandra. Today is Friday, March 27. You’re not behind, you’re building. Keep going. Here’s your Daily Drive.]]></description>
+      <enclosure url="https://aleandfranklin.github.io/ales-daily-drive-intro/episodes/2026-03-27-intro.mp3" length="152064" type="audio/mpeg" />
+      <guid>https://aleandfranklin.github.io/ales-daily-drive-intro/episodes/2026-03-27-intro.mp3</guid>
+      <pubDate>Fri, 27 Mar 2026 15:30:03 +0000</pubDate>
+    </item>
   </channel>
 </rss>

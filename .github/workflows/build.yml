@@ -1,0 +1,45 @@
+name: Build daily intro
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 11 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate daily intro
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+          PODCAST_EMAIL: ${{ secrets.PODCAST_EMAIL }}
+          SHOW_TITLE: "Ale's Daily Drive Intro"
+          SHOW_DESCRIPTION: "A short daily intro for Ale's Daily Drive."
+          SHOW_AUTHOR: "Ale"
+          OPENAI_VOICE: "marin"
+          OPENAI_TTS_MODEL: "gpt-4o-mini-tts"
+        run: python scripts/generate_intro.py
+
+      - name: Commit updated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add episodes index.xml
+          git commit -m "Update daily intro" || echo "No changes to commit"
+          git push

@@ -38,7 +38,7 @@ def build_script_text():
     message = random.choice(messages)
 
     return (
-        f"Good morning, Alejandra. "
+        f"Good morning Alejandra! "
         f"Today is {date_str}. "
         f"{message} "
         f"Here’s your Daily Drive."

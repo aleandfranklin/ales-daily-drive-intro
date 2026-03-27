@@ -53,10 +53,10 @@ def generate_audio(text: str, out_path: Path):
     background_path = ROOT / "background.mp3"
 
     # Timing settings
-    intro_lead_ms = 5000
-    outro_tail_ms = 5000
+    intro_lead_ms = 10000
+    outro_tail_ms = 7000
     fade_in_ms = 2000
-    fade_out_ms = 2000
+    fade_out_ms = 3000
 
     # Make music audible (we will tune this later if needed)
     background_reduction_db = 0  # TEMP: loud for testing

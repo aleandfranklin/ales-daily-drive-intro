@@ -54,9 +54,9 @@ def generate_audio(text: str, out_path: Path):
 
     # Timing settings
     intro_lead_ms = 10000
-    outro_tail_ms = 7000
+    outro_tail_ms = 6000
     fade_in_ms = 2000
-    fade_out_ms = 3000
+    fade_out_ms = 5000
 
     # Make music audible (we will tune this later if needed)
     background_reduction_db = 0  # TEMP: loud for testing

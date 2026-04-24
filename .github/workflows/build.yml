@@ -3,7 +3,7 @@ name: Build daily intro
 on:
   workflow_dispatch:
   schedule:
-    - cron: '13 5 * * *'
+    - cron: '03 5 * * *'
       timezone: 'America/New_York'
 
 permissions:

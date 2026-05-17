@@ -15,15 +15,15 @@
 
     <itunes:image href="https://aleandfranklin.github.io/ales-daily-drive-intro/cover.jpg" />
 
-    <lastBuildDate>Sat, 16 May 2026 10:23:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 10:27:15 +0000</lastBuildDate>
 
 
     <item>
-      <title><![CDATA[Daily Intro for May 16, 2026]]></title>
-      <description><![CDATA[Good morning Alejandra! Today is Saturday, May 16. Get in there, get it done, and remind everyone who they’re dealing with. Here’s your Daily Drive.]]></description>
-      <enclosure url="https://aleandfranklin.github.io/ales-daily-drive-intro/episodes/2026-05-16-intro.mp3" length="106893" type="audio/mpeg" />
-      <guid>https://aleandfranklin.github.io/ales-daily-drive-intro/episodes/2026-05-16-intro.mp3</guid>
-      <pubDate>Sat, 16 May 2026 10:23:55 +0000</pubDate>
+      <title><![CDATA[Daily Intro for May 17, 2026]]></title>
+      <description><![CDATA[Good morning Alejandra! Today is Sunday, May 17. Do it for Mateo. Here’s your Daily Drive.]]></description>
+      <enclosure url="https://aleandfranklin.github.io/ales-daily-drive-intro/episodes/2026-05-17-intro.mp3" length="85677" type="audio/mpeg" />
+      <guid>https://aleandfranklin.github.io/ales-daily-drive-intro/episodes/2026-05-17-intro.mp3</guid>
+      <pubDate>Sun, 17 May 2026 10:27:15 +0000</pubDate>
     </item>
 
   </channel>
